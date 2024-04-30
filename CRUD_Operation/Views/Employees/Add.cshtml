@@ -1,0 +1,28 @@
+﻿@model CRUD_Operation.Models.AddEmployeeViewModel
+
+<h1>Add Employee</h1>
+
+<form method="post" action="Add">
+	<div class="mb-3">
+		<label for=" "class="form-label">Name</label>
+		<input type="text" class="form-control"asp-for="Name"/>
+	</div>
+
+	<div class="mb-3">
+		<label for=" " class="form-label">Address</label>
+		<input type="text" class="form-control" asp-for="Address" />
+	</div>
+
+	<div class="mb-3">
+		<label for=" " class="form-label">Mobile</label>
+		<input type="number" class="form-control" asp-for="Mobile" />
+	</div>
+
+	<div class="mb-3">
+		<label for=" " class="form-label">DateOfBirth</label>
+		<input type="date" class="form-control" asp-for="DateOfBirth" />
+	</div>
+
+	<button type="submit" class="btn btn-primary">Submit</button>
+	
+</form>
